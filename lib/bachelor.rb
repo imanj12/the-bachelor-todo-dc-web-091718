@@ -5,8 +5,7 @@ def get_first_name_of_season_winner(data, season)
       season_attrib.each do |obj|
         if obj["status"] == "Winner"
           name = obj["name"].split(" ")
-          first_name = name[0]
-          return first_name
+          return name[0]
         end
       end
     end
