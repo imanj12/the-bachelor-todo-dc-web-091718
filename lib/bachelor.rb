@@ -53,8 +53,12 @@ def get_average_age_for_season(data, season)
   data.each do |season_num, season_attrib|
     if season_num == season
       season_attrib.each do |obj|
-        total_age += obj["age"].
-  
+        total_age += obj["age"].to_i
+        total_contestants += 1
+      end
+    end
+  end
+  avg_age = total_age / total_contestants
 end
 
 
