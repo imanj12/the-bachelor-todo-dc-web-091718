@@ -24,7 +24,7 @@ def get_contestant_name(data, occupation)
 end
 
 def count_contestants_by_hometown(data, hometown)
-  
+  hometown_counter = 0
   data.each do |season_num, season_attrib|
     season_attrib.each do |obj|
       
