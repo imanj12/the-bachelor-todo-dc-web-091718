@@ -16,8 +16,11 @@ def get_contestant_name(data, occupation)
   
   data.each do |season_num, season_attrib|
     season.attrib.each do |obj|
-      
-  
+      if obj["occupation"] == occupation
+        return obj["name"]
+      end
+    end
+  end
 end
 
 def count_contestants_by_hometown(data, hometown)
