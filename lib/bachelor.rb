@@ -14,7 +14,9 @@ end
 
 def get_contestant_name(data, occupation)
   
-  
+  data.each do |season_num, season_attrib|
+    season.attrib.each do |obj|
+      
   
 end
 
